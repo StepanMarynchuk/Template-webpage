@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>it-Lviv</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2db704cfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-header flex flex-d-c">
+    <div class="navigation">
+      <div class="container jc-between topnav">
+        <img src="icon.png" alt="logo" class="logo">
+        <img src="burger-menu.png" alt="" onclick="myFunction()" id="drop">
+        <nav class="nav-bar" id="myDropdown">
+          <a href="#main">Головна</a>
+          <a href="#speakers">Спікери</a>
+          <a href="#schedule">Програма</a>
+          <a href="#partner">Партнери</a>
+          <a href="#buytickets"> Придбати квиток</a>
+        </nav>
+      </div>
+    </div>
+    <div class="text-top">
+      <h3>01 грудня 2019 | ЛЬВІВ</h3>
+      <h1>IT - КОНФЕРЕНЦІЯ</h1>
+      <h5>для зацікавлених у розвитку ІТ індустрії Львівського регіону та України</h5>
+      <h3>IT Lviv community</h3>
+      <button class="button-schedule">Програма події</button>
+</header>
+<main>
+  <section class="speakers" id="speakers">
+      <h1 class="title">Спікери та учасники дискусії</h1>
+    <div class="speakers-wrapper">
+      <div class="speaker">
+        <img src="fp1.jpeg" alt="avatar" class="speakers-image">
+        <div class="overlay">John Ohrn</div>
+        <div><p>CEO Agro IT</p></div>  
+      </div>
+      <div class="speaker">
+        <img src="fp2.jpeg" alt="avatar" class="speakers-image">
+        <div class="overlay">Emanuel Lowe</div>
+        <div><p>Managing partner</p></div>  
+      </div>
+      <div class="speaker">
+        <img src="fp4.jpeg" alt="avatar" class="speakers-image">
+        <div class="overlay">Marta Shegynska</div>
+        <div><p>Delivery Center Director</p></div> 
+      </div>
+    </div>
+
+  </section>  
+</main>
+<script src="app.js"></script>   
+</body>
+</html>
