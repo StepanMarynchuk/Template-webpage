@@ -47,7 +47,7 @@
 }
 .nav a{
   text-decoration: none;
-  color: grey;
+  color: #7f7f7f;
   padding: 10px; 
 }
 .nav a:hover{
@@ -74,6 +74,7 @@ burger
 .burger {
   height: 40px;
   width: 40px;
+  cursor: pointer;
 }
 
 .text-top {
@@ -152,10 +153,11 @@ hr {
 /*Main*/
 @media(max-width: 759px) {
   .nav {
-    display: none;
-  }
-}
-@media(min-width: 759px) {
+  display: none;
+  }}
+
+
+@media(min-width: 760px) {
   .burger {
     display: none;
   }

@@ -1,24 +1,23 @@
 "use strict"
 
 function showNavigation() {
-  let x = document.getElementById("nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else if (x.style.display === "none")  {
-    x.style.display = "block";
-    x.style.display = "flex";
-    x.style.position = "absolute";
-    x.style.background = "#151515";
-    x.style.height = "100%";
-    x.style.width = "100%";
-    x.style.flexDirection = "column";
-    x.style.borderTop = "1px solid #222";
-    x.style.padding = "20px";
-    x.style.color = "red";
-    x.style.top = "60px";
-    x.style.fontSize = "50px";
-    x.style.paddingTop = "40px";
+  let i = document.getElementById("nav");
+  if (i.style.display === "block") {
+    i.style.display = "none";
+  } else if (i.style.display === "none")  {
+    i.style.display = "block";
+    i.style.display = "flex";
+    i.style.position = "absolute";
+    i.style.background = "#ffffff";
+    i.style.height = "100%";
+    i.style.width = "100%";
+    i.style.flexDirection = "column";
+    i.style.borderTop = "1px solid #7f7f7f";
+    i.style.padding = "20px";
+    i.style.top = "120px";
+    i.style.fontSize = "20px";
+    i.style.paddingTop = "40px";
   } else {
-    x.style.display = "none";
+    i.style.display = "none";
   }
 }
