@@ -5,112 +5,99 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.jc-between {
-    justify-content: space-between;
-}
- /*Flex*/
-
- .flex {
-     display: flex;
- }
- .flex-d-c {
-     flex-direction: column;
- }
+ /*Change*/
 
 .container {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-.top-header {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    color: #fff;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url('slide.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color:#888;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
-
-
-.navigation {
-    height: 100px;
-    width: 100%;
-    background-color: white;
-    flex-wrap: wrap;
-  }
-.nav-bar a {
-    text-decoration: none;
-    color: rgb(0, 140, 255);
-    font-size: bold;
-    padding: 20px 15px;
+.flex {display: flex;}
+.flex-d-c {flex-direction: column;}
+/*
+ Header
+*/
+.header {
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-blend-mode: multiply;
+  background-color:white;
+  padding-bottom: 30px;
 }
-
-.nav-bar a:hover {
-    background-color: var(--yellow);
-    color: #000;
-  }
-
-
+.header_top {
+  background-color: white;
+  justify-content: space-around;
+}
 .logo {
-    margin-left: 100px;
-    margin-right: 40px;
-    height: 80px;
-    width: 80px;
-  }
+  margin-left: 100px;
+  margin-right: 40px;
+  height: 100px;
+  width: 90px;
+}
+.nav {
+  flex-wrap: wrap;
+}
+.nav a{
+  text-decoration: none;
+  color: grey;
+  padding: 10px; 
+}
+.nav a:hover{
+  background-color: rgb(66, 171, 241);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}  
+.header h1, p {
+  color: white;
+}
+.header h1 {
+  font-size: 50px;
+  font-family: monospace;
+  padding: 30px;
+}
+.header p {
+  font-size: 20px;
+  padding: 30px;
+}
+/*
+burger
+*/
+.burger {
+  height: 40px;
+  width: 40px;
+}
 
+.text-top {
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: white;
+}
 
-@media (max-width: 759px){
-.nav-bar {
-display: none;
-}}
-
-#drop {
-    height: 25px;
-    width: 25px;
-    margin-right: 25px;
-    color: rgb(0, 140, 255);
-  }
-
-  #myDropdown {
-      display:none;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: white;
-    position: relative;
-  }
-
-  .text-top {
-      line-height: 40px;
-      text-align: center;
-      margin-bottom: 100px;
-  }
-  .button-schedule {
-    font-size: 16px;
-    background-color: white;
-    padding: 0.5em 1em;
-    margin-top: 15px;
-    border-radius: 5px;
-    border: none;
-    color:grey;
-    font-weight: bold;
+.button-schedule {
+  font-size: 16px;
+  background-color: grey;
+  padding: 0.5em 1em;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  color:white;
+  font-weight: bold;
 }
 .button-schedule:hover {
-    background-color: white;
-    cursor: pointer;
-    color: rgb(0, 140, 255);
+  background-color: white;
+  cursor: pointer;
+  color: rgb(66, 171, 241);
 }
-
 /*Main*/
 .title {
   text-align: center;
@@ -162,5 +149,15 @@ hr {
   justify-content: space-around;
 }
 
-
+/*Main*/
+@media(max-width: 759px) {
+  .nav {
+    display: none;
+  }
+}
+@media(min-width: 759px) {
+  .burger {
+    display: none;
+  }
+}
  
