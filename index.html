@@ -9,12 +9,10 @@
     <script src="https://kit.fontawesome.com/c2db704cfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header class="header flex flex-d-c">
         <div class="header_top container">
           <img src="icon.png" alt="logo" class="logo">
-          <nav class="nav flex" id="nav">
-              <a href="#main">Головна</a>
+          <nav class="nav flex" id="nav"> 
               <a href="#speakers">Спікери</a>
               <a href="#schedule">Програма</a>
               <a href="#partner">Партнери</a>
@@ -36,21 +34,82 @@
       <div class="speaker">
         <img src="fp1.jpeg" alt="avatar" class="speakers-image">
         <div class="overlay">John Ohrn</div>
-        <div><p>CEO Agro IT</p></div>  
+        <p>CEO Agro IT</p>
       </div>
       <div class="speaker">
         <img src="fp2.jpeg" alt="avatar" class="speakers-image">
         <div class="overlay">Emanuel Lowe</div>
-        <div><p>Managing partner</p></div>  
+        <p>Managing partner</p> 
       </div>
       <div class="speaker">
         <img src="fp4.jpeg" alt="avatar" class="speakers-image">
         <div class="overlay">Marta Shegynska</div>
-        <div><p>Delivery Center Director</p></div> 
+        <p>Delivery Center Director</p> 
       </div>
     </div>
-
-  </section>  
+  </section>
+  <section id="schedule">
+      <div class="container flex-d-c">
+        <h1 class="main-title">Програма</h1>
+        <div class="schedule-wrapper">
+          <div class="schedule-slot">
+            <time datetime="2020-02-14 9:00">9:00</time>
+            <h2 style="color: white;">DOORS & REGISTRATION</h2>
+          </div>
+          <div class="schedule-slot">
+            <time datetime="2020-02-14 10:00">10:00</time>
+            <h2>John Ohrn</h2>
+            <h4>Умови ведення ІТ бізнесу.</h4>
+          </div>
+          <div class="schedule-slot">
+            <time datetime="2020-02-14 12:00">12:00</time>
+            <h2>Emanuel Lowe</h2>
+            <h4>Інвестиції та нові ринки
+            </h4>
+          </div>
+          <div class="schedule-slot">
+            <time datetime="2020-02-14 13:00">13:00 - 14:00</time>
+            <p>Break</p>
+          </div>
+            <div class="schedule-slot">
+            <time datetime="2020-02-14 14:00">14:00</time>
+            <h2>Marta Shegynska</h2>
+            <h4>Ефективне залучення клієнтів
+              </h4>
+            <time datetime="2020-02-14 15:00">15:00</time>
+            <p>Split Chatter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="partner">
+      <h1 class="main-title">Партнери</h1>
+        <div class="partner-wrapper">
+          <img src="softserve.jpg" alt="">
+          <img src="att.png" alt="">
+          <img src="epam.jpeg" alt="">
+          <img src="107.png" alt="">
+        </div>
+    </section>
+    <section id="buytickets">
+      <div>
+        <h1 class="main-title">Купити квитки</h1>
+      </div>
+      <div class="buytickets-wrapper">
+        <div class="box-1">
+          <h3>Early Bird</h3>
+          <h2>750 UAH</h2>
+          <h6>Вартість дійсна до 10 листопада</h6>
+          <button>Придбати</button>
+        </div>
+        <div class="box-2">
+          <h3>Повна вартість</h3>
+          <h2>1500 UAH</h2>
+          <h6>Діє з 20 листопада</h6>
+          <button>Придбати</button>
+        </div>
+      </div>
+    </section>  
 </main>
 <script src="app.js"></script>   
 </body>

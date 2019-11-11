@@ -105,49 +105,159 @@ burger
   font-size: 30px;
   margin: 40px auto 20px;
   color: #888;
-
-}
-hr {
-    width: 30%;
-    margin-left: 260px;
+  
 }
 .overlay {
     position: absolute; 
     bottom: 0; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 150px;
+    color: black; 
+    width: 200px;
     transition: .5s ease;
     opacity:0;
     color: white;
     font-size: 15px;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
   .speaker {
-    margin: 40px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
     position: relative;
+    
   }
   .speaker img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 195px;
     object-fit: cover;
     display: block;
   }
   .speaker:hover .overlay {
     opacity: 1;
   }
+  .speaker p {
+    color: rgb(66, 171, 241);
+    font-size: 15px;
+    margin: 15px auto 10px;
+    text-align: center;
+    font-weight: bold;
+  }
 
   .speakers-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+/* Shedule */
+
+#schedule {
+  background-color: grey;;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 40px auto 20px;
+}
+
+.schedule-wrapper { margin-top: 30px;}
+
+.schedule-slot {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  align-items: baseline;
+}
+
+.schedule-slot time {
+  flex-basis: 70px;
+}
+.schedule-slot h2 {
+  font-size: 20px;
+  flex-basis: calc(100% - 70px);
+  margin-bottom: 10px;
+  color: rgb(66, 171, 241);
+}
+.schedule-slot h4 {
+  flex-basis: 100%;
+  padding-left: 70px;
+}
+
+.schedule-slot p {
+  font-size: 20px;
+  flex-basis: calc(100% - 70px);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/*Partners*/
+
+.partner-wrapper img {
+  height: 200px;
+  width: 190px;
+}
+
+.partner-wrapper  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*Tickets*/
+.box-1 {
+  margin-top: 20px;
+  padding-top: 80px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(167, 164, 164);
+  border-radius: 10px;;
+  text-align: center;
+}
+.box-1:hover {
+  background-color: rgb(66, 171, 241);
+  color: white;
+}
+
+.box-2 {
+  padding-top: 80px;
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(167, 164, 164);
+  border-radius: 10px;
+  text-align: center;
+}
+.box-2:hover {
+  background-color: rgb(66, 171, 241);
+  color: white;
+}
+
+.box-1 h2,
+.box-2 h2 {
+  color: white;
+}
+
+.buytickets-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.buytickets-wrapper button {
+  font-size: 16px;
+  background-color: white;
+  padding: 0.5em 1em;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none;
+  color:rgb(66, 171, 241);
+  font-weight: bold;
+  
 }
 
 /*Main*/
